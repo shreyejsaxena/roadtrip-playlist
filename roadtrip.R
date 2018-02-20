@@ -23,9 +23,9 @@ library(BRRR)
 ########################
 #     AUTHORIZATION    #
 #################################################################################################################
-client_id = "#"
-client_secret = "#"
-token_id = "#"
+client_id = "#" # from spotify API app https://beta.developer.spotify.com/dashboard/login
+client_secret = "#" # from spotify API
+token_id = "#" # this is the spotify user ID of the person who is creating the playlist
 o = httr::oauth_endpoint(authorize = "https://accounts.spotify.com/authorize", access = "https://accounts.spotify.com/api/token")
 a = httr::oauth_app("app_id", client_id, client_secret)
 keys = httr::oauth2.0_token(o, a, scope = "playlist-modify-public")
