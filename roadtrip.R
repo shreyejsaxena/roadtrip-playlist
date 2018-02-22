@@ -1,12 +1,3 @@
-################
-#    INPUTS    #
-#################################################################################################################
-user_id = c("1253287932", "22g4tscsn2sd3nqor5du5i5gq", "1219714259") # all user ids of the people you want to make the playlist for
-length_of_playlist = 12 # hours
-playlist_name = "Partitioning Around Medoids"
-#################################################################################################################
-
-
 library(devtools)
 library(dplyr)
 library(ggplot2)
@@ -18,6 +9,14 @@ library(jsonlite)
 library(httr)
 # devtools::install_github("brooke-watson/BRRR")
 library(BRRR)
+
+################
+#    INPUTS    #
+#################################################################################################################
+user_id = c("1253287932", "22g4tscsn2sd3nqor5du5i5gq", "1219714259") # all user ids of the people you want to make the playlist for
+length_of_playlist = 12 # hours
+playlist_name = "Partitioning Around Medoids"
+#################################################################################################################
 
 
 ########################
